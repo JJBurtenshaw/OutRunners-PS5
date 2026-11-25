@@ -1,0 +1,2 @@
+ bd847861e68d20736f40030f410606609969cdde lan (bd84786)
+ 8cf9d7e8dc7da2c21f325988c8c6b5b5dcf24aff tools/core (remotes/origin/console-original)

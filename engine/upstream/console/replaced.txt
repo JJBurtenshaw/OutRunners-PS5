@@ -1,0 +1,23 @@
+# The game's functions the console build puts its own in place of (console/*.c): tools/decompile.py writes
+# their definitions as CONSOLE_ORIGINAL(name), which is original_name there and the game's own elsewhere.
+load_settings            # free play always: the settings as the EEPROM has them, then the coins' set to it
+credit_display_update    # no FREE PLAY line: the console has no coins
+send_sound_requests      # the right seat's sounds only while it plays: one sound for both speakers
+check_game_start         # the console's menus, and the games they start
+coin_prompt_message_update  # TURN THE IGNITION KEY / INSERT COIN(S): none, PRESS START is the console's
+ignition_key_prompt_update  # the ignition key's picture: none either
+network_check_stand_alone   # alone without NETWORK CHECK and its 128 frames: the SEGA presentation first
+player_car_start_course     # REVERSE, FULL: the race's course the route's own
+road_object_stream_read     # REVERSE, FULL: a goal stage's roadside objects to a fork in place of its goal
+race_background_update      # REVERSE, FULL: each stage's own background at the forks
+race_progress_update        # REVERSE, FULL: the time a fork adds the route's next stage's
+route_map_update            # REVERSE, FULL: no route map (it draws the forward route)
+course_record_beaten        # REVERSE, FULL: no course record (the game's are by goal)
+course_records_update       # (the same)
+stage_indicator_draw        # REVERSE, FULL: the STAGE label by the stage's own level
+race_cars_start             # TIME ATTACK: the ghost's car and riders beside the race's cars
+waiting_banner_show         # one player (CLASSIC's too): no WAITING FOR CHALLENGERS, the entries closed once the choices are made
+car_select_run              # the pause's RESTART: the car and the transmission chosen before, chosen again
+link_receive_records        # the network: the other devices' race records as their datagrams bring them (network.c)
+link_send_records           # the network: none to a link board, the records go with the port's frame
+backdrop_translucent_update  # the spray of the falls and the pyramids: every frame and see-through, in place of every other frame

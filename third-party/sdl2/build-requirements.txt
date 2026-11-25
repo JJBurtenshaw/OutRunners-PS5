@@ -1,0 +1,31 @@
+SDL2 version: 2.30.12
+Upstream commit: ee4c47dc0d617b3bc8f35108f9956baf228a1322
+PS5 Payload SDK: v0.42
+PacBrew: v0.40.2
+Compiler: Clang 18.1.3
+CMake: 3.28.3
+Generator: Unix Makefiles
+Build type: Release
+Static library: ON
+Position-independent code: ON
+Git core.abbrev: 7
+
+Configure using cmake-options.txt.
+
+Additional required CMake arguments:
+-DCMAKE_C_FLAGS=-I<PACBREW_PORTS>/include
+-DCMAKE_EXE_LINKER_FLAGS=-L<PACBREW_PORTS>/lib
+
+PACBREW_PORTS refers to the isolated PacBrew
+user/homebrew directory.
+
+The generated SDL_config.h must define:
+HAVE_ICONV_H 1
+HAVE_ICONV 1
+SDL_USE_LIBICONV 1
+
+Build target: SDL2-static
+Result: libSDL2.a
+
+Do not substitute an unmodified SDL2 library.
+The PS5 cached framebuffer modifications are essential.

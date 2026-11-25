@@ -1,0 +1,25 @@
+/.env
+/.deps/
+/build/
+/dist/
+/local-libs/
+/runtime/libc.prx
+/engine/native-objects/**/*.o
+*.zip
+*.assets
+__pycache__/
+
+# Generated engine objects; retain compilation manifests
+/engine/native-objects/**/*.o
+!/engine/native-objects/compile-plan.json
+!/engine/native-objects/objects.txt
+
+# Local credentials and generated distribution archives
+.env.*
+!.env.example
+*.pem
+*.key
+*.rom
+*.chd
+*.tar.gz
+*.tar.xz
