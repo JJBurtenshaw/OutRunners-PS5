@@ -18,6 +18,12 @@ the PlayStation 5 homebrew environment.
 This release candidate has been tested on physical
 PlayStation 5 hardware.
 
+## Screenshots
+
+![OutRunners PS5 title screen](screenshots/title-screen.jpg)
+
+![OutRunners PS5 gameplay](screenshots/gameplay.jpg)
+
 ## Features
 
 - Native PS5 application
