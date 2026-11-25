@@ -20,9 +20,10 @@ PlayStation 5 hardware.
 
 ## Screenshots
 
-![OutRunners PS5 title screen](screenshots/title-screen.jpg)
-
-![OutRunners PS5 gameplay](screenshots/gameplay.jpg)
+<p align="center">
+  <img src="screenshots/title-screen.jpg" alt="OutRunners PS5 title screen" width="49%">
+  <img src="screenshots/gameplay.jpg" alt="OutRunners PS5 gameplay" width="49%">
+</p>
 
 ## Features
 
